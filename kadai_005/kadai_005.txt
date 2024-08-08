@@ -1,0 +1,89 @@
+
+9002155@18T03447 MINGW64 ~
+$ cd DeskTop
+
+9002155@18T03447 MINGW64 ~/DeskTop
+$ cd TEMP
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP
+$ cd samurai
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai
+$ mkdir git_challenge
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai
+$ cd git_challenge
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/9002155/Desktop/TEMP/samurai/git_challenge/.git/
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ touch hello_world.txt
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ echo "Hello, world!" > hello_world.txt
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main f3c5d46] hello_world.txtを追加
+ Committer: unknown <9002155@ad.in.tokyogas.co.jp>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ echo "こんにちは、世界！"　>> hello_world.txt
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ git commit -m "日本語訳を追加"
+[main c49ee09] 日本語訳を追加
+ Committer: unknown <9002155@ad.in.tokyogas.co.jp>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$ git log
+commit c49ee0963f465dfc6a6c13ed4395b36f20286a70 (HEAD -> main)
+Author: unknown <9002155@ad.in.tokyogas.co.jp>
+Date:   Thu Aug 8 14:14:10 2024 +0900
+
+    日本語訳を追加
+
+commit f3c5d46d2b58386d3bc6654d255843b843683f39
+Author: unknown <9002155@ad.in.tokyogas.co.jp>
+Date:   Thu Aug 8 14:10:22 2024 +0900
+
+    hello_world.txtを追加
+
+9002155@18T03447 MINGW64 ~/DeskTop/TEMP/samurai/git_challenge (main)
+$
